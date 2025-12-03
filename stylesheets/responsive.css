@@ -135,7 +135,9 @@
     flex-direction: column;
     height: auto;
     min-height: 100vh;
-    padding: 5vh 0;
+    padding-top: 4vw;
+    padding-left: 5vw;
+    padding-left: 5vw;
     gap: 8vw;
   }
   .post-stamp-1:hover,
@@ -241,7 +243,7 @@
     margin-left: 2vw;
     width: 100%;
     opacity: 100%;
-    margin-bottom: -4vw;
+    margin-bottom: -5%;
   }
   .lines-text h3 {
     font-size: 6vw;
@@ -259,7 +261,7 @@
     flex-direction: column;
     height: auto;
     min-height: 100vh;
-    padding: 5vh 0;
+    padding: 4vh 0;
     gap: 8vw;
   }
   .post-stamp-1:hover,
@@ -363,7 +365,7 @@
   .lines-text {
     margin-left: 2vw;
     width: 100%;
-    margin-bottom: -13vw;
+    margin-bottom: -5%;
   }
   .lines-text h3 {
     font-size: 8vw;
