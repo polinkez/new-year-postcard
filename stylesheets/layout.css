@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --beige: #e4dfdb;
+  --dark: #242424;
+  --red: #d10e0e;
+}
+
+body {
+  margin: 0 auto;
+  background: var(--beige);
+  -webkit-font-smoothing: antialiased;
+  cursor: url("../images/cursor.png"), auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3vw;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.line-1 {
+  position: fixed;
+  width: 300%;
+  top: 0%;
+  animation: scroll-left 25s linear infinite;
+}
+.line-1:hover {
+  animation-play-state: paused;
+}
+
+/* ––––– LEFT SIDE ––––– */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  height: auto;
+  margin-top: 8vw;
+  margin-left: 5vw;
+  color: var(--dark);
+}
+
+.text h1 {
+  margin: 0;
+  line-height: 5vw;
+  -webkit-text-stroke: 0.15vw var(--dark);
+  -webkit-text-stroke-position: outside;
+}
+.text h1:hover {
+  color: var(--red);
+  -webkit-text-stroke: 0.15vw var(--red);
+}
+
+.fontOne {
+  font-family: "Kraskario";
+  font-size: 10vw;
+}
+
+.fontTwo {
+  font-family: "Princess Diana";
+  font-size: 7vw;
+}
+
+.space {
+  letter-spacing: -3vw;
+}
+
+.text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: -15vw;
+  margin-bottom: 4vw;
+}
+
+.text-bottom h2 {
+  font-family: "Kraskario";
+  -webkit-text-stroke: 0.15vw var(--red);
+  -webkit-text-stroke-position: outside;
+  margin-top: auto;
+  bottom: 0;
+  font-size: 3vh;
+  color: var(--red);
+}
+.text-bottom h2:hover {
+  color: var(--dark);
+  -webkit-text-stroke: 0.15vw var(--dark);
+}
+.text-bottom .wine {
+  width: 35vh;
+  margin-right: 2vw;
+  mix-blend-mode: darken;
+  transition: transform 0.4s ease-in-out;
+}
+
+.wine:hover {
+  transform: scale(0.8) rotate(6deg);
+}
+
+/* ––––– RIGHT SIDE ––––– */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  height: 100vh;
+  margin-right: 5vw;
+}
+
+.decor {
+  position: relative;
+  height: 40vw;
+  width: 100%;
+  margin: 5vw auto;
+}
+
+.post-stamp-1 {
+  position: absolute;
+  width: 40%;
+  top: 45%;
+  left: 0%;
+  transform: rotate(-2deg);
+  z-index: 2;
+}
+
+.post-stamp-1:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.post-stamp-2 {
+  position: absolute;
+  width: 32%;
+  top: 0%;
+  left: 20%;
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+.post-stamp-2:hover {
+  transform: scale(1.2) rotate(3deg);
+}
+
+.post-stamp-3 {
+  position: absolute;
+  width: 34%;
+  top: 50%;
+  left: 40%;
+  transform: rotate(5deg);
+  z-index: 4;
+}
+
+.post-stamp-3:hover {
+  transform: scale(1.2) rotate(2deg);
+}
+
+.post-stamp-4 {
+  position: absolute;
+  width: 38%;
+  top: 5%;
+  right: 0%;
+  z-index: 3;
+}
+.post-stamp-4:hover {
+  transform: scale(1.2) rotate(-2deg);
+}
+
+.post-stamp-1,
+.post-stamp-2,
+.post-stamp-3,
+.post-stamp-4 {
+  transition: transform 0.4s ease-in-out; /* ← Best for hover effects */
+}
+
+.lines-and-text {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0vh;
+  z-index: 1;
+}
+
+.line {
+  border: none;
+  border-top: 0.3vw solid var(--dark);
+  margin: 6vw 0;
+  border-width: 0.2vw;
+}
+
+.lines-text {
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 2vw;
+  width: 100%;
+  bottom: 10vh;
+  z-index: 2;
+  opacity: 0%;
+  transition: opacity 0.4s ease-in-out;
+}
+.lines-text:hover {
+  opacity: 100%;
+}
+
+.lines-text h3 {
+  font-family: "Princess Diana";
+  color: var(--red);
+  font-size: 5vw;
+  line-height: 6.5vw;
+}
+
+.line-2 {
+  position: fixed;
+  width: 300%;
+  bottom: 0%;
+  left: 50%;
+  animation: scroll-right 25s linear infinite;
+}
+.line-2:hover {
+  animation-play-state: paused;
+}

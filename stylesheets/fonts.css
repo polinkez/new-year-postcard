@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Kraskario";
+  src: url("../fonts/kraskario.regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Princess Diana";
+  src: url("../fonts/Princess-Diana.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
